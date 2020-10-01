@@ -65,11 +65,37 @@ h1 {
 }
 /* Header & Navigation
 -------------------------------------------- */
+
+header {
+  background: #e6ae65;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 1%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+}
+
+nav .item {
+  border-radius: 30px;
+  background: #1b203d;
+  padding: 8px;
+  display: inline-block;
+  width: 180px;
+  height: 54px;
+  text-align: center;
+}
+
 li,
-a {
+.item {
   font-family: "Doubleplus", sans-serif;
   font-size: 1.875rem;
-  color: #bac5cf; /*hover in yellow */
+  color: #bac5cf; /*hover in #e6ae65 */
   text-decoration: none;
 }
 
@@ -78,31 +104,20 @@ a {
   width: 3.375rem;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.625rem 3%;
-  background: #e6ae65;
+.svg {
+  position: absolute;
+  height: 3.52375rem;
+  width: 3.375rem;
 }
 
-.nav-links {
-  list-style: none;
-}
-
-.nav-links li {
-  display: inline-block;
-  padding: 0rem 10.625rem;
-}
-
-.nav-links li a {
-  border-radius: 25px;
-  background: #1b203d;
-  padding: 10px 10px;
-}
-
-.nav-links li a:hover {
+.links:hover :first-child {
   color: #e6ae65;
+}
+
+.logo:hover,
+.login:hover,
+.links:hover {
+  scale: 1.1;
 }
 
 /* Images & Media
