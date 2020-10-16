@@ -7,10 +7,10 @@
   </head>
   <body>
     <header>
-      <a class="logo" href="index.html"
+      <a class="logo" href="../index.html"
         ><img src="/images/logo.png" alt="Logo, home button"
       /></a>
-      <nav>
+      <nav class="topnav">
         <div class="links">
           <a class="item" href="/html/search.html">Search</a>
           <a href="/html/search.html"
@@ -48,8 +48,51 @@
     </header>
     <main>
       <div class="banner">
-        <h1>Contact Us!</h1>
+        <h1>Contact Us</h1>
       </div>
+      <h2 class="quoteh2">We're looking forward to hear from you!</h2>
+      <form action="sent-success.php" method="POST">
+        <fieldset>
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form__input"
+            required
+          />
+          <label for="email">Your email address</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form__input"
+            required
+          />
+          <label for="message">Your Message</label>
+          <input
+            type="text"
+            name="message"
+            id="message"
+            class="form__input"
+            required
+          />
+        </fieldset>
+        <input type="submit" value="Send message" />
+      </form>
     </main>
+    <footer>
+      <nav class="footernav">
+        <h2 class="copyh2">&copy; Gamehub 2020</h2>
+        <div class="seperator"></div>
+        <a href="#"><h2 class="footerh2">Legal Notice</h2></a>
+        <div class="seperator"></div>
+        <a href="#"><h2 class="footerh2">Terms of Use</h2></a>
+        <div class="seperator"></div>
+        <a href="#"><h2 class="footerh2">Privacy & Cookies Policy</h2></a>
+        <div class="seperator"></div>
+        <a href="#"><h2 class="footerh2">Contact Us</h2></a>
+      </nav>
+    </footer>
   </body>
 </html>
