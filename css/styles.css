@@ -168,7 +168,7 @@ li,
   scale: 1.1;
 }
 
-.start {
+.indexquote {
   display: flex;
   align-items: center;
   flex-flow: column;
@@ -176,13 +176,25 @@ li,
 }
 
 .main-button {
-  margin-top: 4rem;
+  display: flex;
+}
+
+.indexh3 {
   border-radius: 45px;
   background: #1b203d;
   width: 368px;
   height: 86px;
   padding: 20px;
   text-align: center;
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+.fa-angle-right {
+  color: #1b203d;
+  margin-top: 2.1rem;
+  margin-left: 1rem;
+  font-weight: normal;
 }
 
 /* Images & Media
