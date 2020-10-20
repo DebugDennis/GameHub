@@ -101,16 +101,12 @@ h1 {
   text-align: center;
 }
 
-.indexquote {
-  margin-left: 40%;
-  padding-top: 4rem;
-}
-
 .indexh3 {
   font-family: "Doubleplus", sans-serif;
-  font-size: 1.875rem;
+  font-size: 2.1875rem;
   color: #bac5cf; /*hover in #e6ae65 */
   text-decoration: none;
+  font-weight: normal;
 }
 
 /* Header & Navigation
@@ -167,8 +163,26 @@ li,
 
 .logo:hover,
 .login:hover,
-.links:hover {
+.links:hover,
+.main-button:hover {
   scale: 1.1;
+}
+
+.start {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  padding-top: 2rem;
+}
+
+.main-button {
+  margin-top: 4rem;
+  border-radius: 45px;
+  background: #1b203d;
+  width: 368px;
+  height: 86px;
+  padding: 20px;
+  text-align: center;
 }
 
 /* Images & Media
