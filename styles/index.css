@@ -1,0 +1,124 @@
+@import "imports/variables.css";
+@import "imports/fonts.css";
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*-------- TYPOGRAPHY ---------*/
+ul li {
+  font-family: "Doubleplus", sans-serif;
+}
+
+h1 {
+  font-family: "Commando", sans-serif;
+}
+
+/*-------- NAVBAR ---------*/
+
+nav {
+  height: 100px;
+  background: var(--darkblue);
+}
+
+nav a img {
+  position: absolute;
+  left: 2%;
+  margin-top: 10px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 25px;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 50px;
+  margin: 20px 15px;
+}
+
+nav ul li a {
+  position: relative;
+  padding: 5px 0;
+  color: var(--lightblue);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+label #sign-one,
+label #sign-two {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  margin-right: 30px;
+  cursor: pointer;
+  display: none;
+  margin-top: 20px;
+}
+#ham-menu {
+  display: none;
+}
+
+/*-------- BANNER ---------*/
+
+.banner-area {
+  background: var(--orange);
+}
+
+.banner-text {
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.banner-text h1 {
+  color: var(--darkblue);
+  font-size: 12.4375em;
+  align-self: flex-end;
+  margin-left: 20px;
+}
+
+/*-------- MEDIA QUERIES ---------*/
+@media (max-width: 650px) {
+  label #sign-one {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--darkblue);
+    left: -100%;
+    top: 100px;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 10;
+  }
+  nav ul li {
+    display: block;
+    margin: 40px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    color: var(--orange);
+  }
+  #ham-menu:checked ~ ul {
+    left: 0;
+  }
+  #ham-menu:checked ~ label #sign-one {
+    display: none;
+  }
+  #ham-menu:checked ~ label #sign-two {
+    display: block;
+  }
+}
+
+/*-------- IMPORTS ---------*/
