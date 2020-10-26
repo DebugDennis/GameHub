@@ -10,6 +10,10 @@
   padding: 0;
 }
 
+body {
+  background-color: var(--darkestblue);
+}
+
 /*-------- TYPOGRAPHY ---------*/
 ul li {
   font-family: "Doubleplus", sans-serif;
@@ -23,7 +27,7 @@ h1 {
 
 nav {
   height: 100px;
-  background: var(--darkblue);
+  background: var(--orange);
 }
 
 nav a img {
@@ -33,22 +37,51 @@ nav a img {
 }
 
 nav ul {
-  float: right;
+  display: flex;
+  flex-flow: row nowrap;
   margin-right: 25px;
   list-style: none;
 }
-nav ul li {
-  display: inline-block;
+nav ul div {
+  display: flex;
   line-height: 50px;
-  margin: 20px 15px;
 }
 
 nav ul li a {
   position: relative;
   padding: 5px 0;
   color: var(--lightblue);
-  font-size: 18px;
   text-decoration: none;
+}
+
+.nav-center {
+  margin: 25px auto;
+}
+.nav-center li {
+  padding: 0 30px;
+  margin-left: 20px;
+}
+.nav-center li a {
+  font-size: 1.75em;
+  border-radius: 45px;
+  background: var(--darkblue);
+  padding: 10px 15px;
+}
+
+.nav-right {
+  margin-right: 25px;
+  margin-top: 25px;
+}
+
+.nav-right-container li a,
+.search-btn {
+  font-size: 1.75em;
+  color: var(--darkblue);
+  padding: 20px;
+}
+
+.search-txt {
+  font-size: 1.2em;
 }
 
 label #sign-one,
@@ -59,7 +92,7 @@ label #sign-two {
   margin-right: 30px;
   cursor: pointer;
   display: none;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 #ham-menu {
   display: none;
@@ -68,6 +101,7 @@ label #sign-two {
 /*-------- BANNER ---------*/
 
 .banner-area {
+  margin: 72px;
   background: var(--orange);
 }
 
@@ -101,8 +135,9 @@ label #sign-two {
     transition: 0.5s;
     z-index: 10;
   }
-  nav ul li {
-    display: block;
+  nav ul div {
+    display: flex;
+    flex-flow: column nowrap;
     margin: 40px 0;
     line-height: 30px;
   }
@@ -118,6 +153,9 @@ label #sign-two {
   }
   #ham-menu:checked ~ label #sign-two {
     display: block;
+  }
+  nav a img {
+    scale: 0.8;
   }
 }
 
