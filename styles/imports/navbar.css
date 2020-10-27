@@ -93,6 +93,7 @@ label #sign-two {
     top: 100px;
     transition: 0.5s;
     z-index: 10;
+    flex-flow: column wrap;
   }
   #ham-menu:checked ~ ul {
     left: 0;
@@ -111,13 +112,11 @@ label #sign-two {
   .search-btn {
     color: var(--orange);
   }
-  nav ul div {
-    display: flex;
-    justify-content: center;
-  }
-  .nav-right,
-  .nav-center {
+  .nav-right-container,
+  .search-btn {
     flex-flow: column wrap;
-    justify-content: flex-start;
+  }
+  .search-txt {
+    display: none;
   }
 }
