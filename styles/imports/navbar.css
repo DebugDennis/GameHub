@@ -37,6 +37,7 @@ nav ul li a {
 
 .nav-center {
   margin: 25px auto;
+  padding-left: 10vw;
 }
 .nav-center li {
   padding: 0 30px;
@@ -77,6 +78,22 @@ label #sign-two {
 #ham-menu {
   display: none;
 }
+.current-page {
+  border-bottom: 2px solid var(--darkblue);
+}
+
+/*-------- HOVER EFFECTS ---------*/
+.nav-center li a:hover {
+  font-size: 1.9em;
+}
+
+.navlogo:hover {
+  scale: 1.05;
+}
+
+.nav-right-container li a:hover {
+  font-size: 1.9em;
+}
 
 /*-------- MEDIA QUERIES ---------*/
 
@@ -115,15 +132,13 @@ label #sign-two {
   .search-btn {
     color: var(--orange);
   }
-  .search-txt {
-    display: none;
-  }
   .nav-center {
     flex-direction: column;
     align-items: center;
     line-height: 75px;
     margin-bottom: 0;
-    margin-top: 10vh;
+    margin-top: 5vh;
+    padding-left: 0;
   }
   .nav-center li {
     margin-left: 0;
@@ -138,5 +153,18 @@ label #sign-two {
     flex-direction: column;
     align-items: center;
     line-height: 75px;
+  }
+  .current-page {
+    border-bottom: 2px solid var(--orange);
+  }
+  .navlogo:hover {
+    scale: 0.85;
+  }
+  .nav-center li a:hover {
+    font-size: 1.8em;
+  }
+  label #sign-one:hover,
+  label #sign-two:hover {
+    font-size: 2em;
   }
 }
