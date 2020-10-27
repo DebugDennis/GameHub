@@ -67,7 +67,7 @@ nav ul li a {
 label #sign-one,
 label #sign-two {
   font-size: 30px;
-  color: #fff;
+  color: var(--darkblue);
   float: right;
   margin-right: 30px;
   cursor: pointer;
@@ -95,6 +95,9 @@ label #sign-two {
     z-index: 10;
     flex-direction: column;
   }
+  nav ul div {
+    line-height: 75px;
+  }
   #ham-menu:checked ~ ul {
     left: 0;
   }
@@ -118,13 +121,22 @@ label #sign-two {
   .nav-center {
     flex-direction: column;
     align-items: center;
+    line-height: 75px;
+    margin-bottom: 0;
+    margin-top: 10vh;
+  }
+  .nav-center li {
+    margin-left: 0;
   }
   .nav-right {
     flex-direction: column;
     align-items: center;
+    margin: 0;
+    line-height: 75px;
   }
   .nav-right-container {
     flex-direction: column;
     align-items: center;
+    line-height: 75px;
   }
 }
