@@ -97,7 +97,7 @@ label #sign-two {
 
 /*-------- MEDIA QUERIES ---------*/
 
-@media (max-width: 650px) {
+@media (max-width: 828px) {
   label #sign-one {
     display: flex;
   }
@@ -166,5 +166,12 @@ label #sign-two {
   label #sign-one:hover,
   label #sign-two:hover {
     font-size: 2em;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-center li a,
+  .nav-right-container li a {
+    font-size: 1.4em;
   }
 }
