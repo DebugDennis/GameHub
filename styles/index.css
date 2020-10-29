@@ -111,9 +111,12 @@ body {
     font-size: 15vw;
   }
   .cta h3 {
-    height: 6vh;
-    padding-top: 1.5vh;
-    width: 30vh;
-    padding-left: 1vh;
+    height: 3vh;
+    padding-top: 1vh;
+    width: 17.5vh;
+    font-size: 2vh;
+  }
+  .fa-angle-right {
+    font-size: 5vh;
   }
 }
