@@ -1,0 +1,19 @@
+.banner {
+    margin: 72px;
+    background: var(--orange);
+  }
+  
+  .banner-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+  
+  .banner-txt {
+    color: var(--darkblue);
+    font-size: 12.4375vw;
+    align-self: flex-end;
+    margin-left: 20px;
+    margin-top: 5vh;
+  }

@@ -2,40 +2,14 @@
 @import "imports/fonts.css";
 @import "imports/navbar.css";
 @import "imports/global.css";
-
+@import "imports/banner.css";
 
 /*-------- BANNER ---------*/
-
-.banner {
-  margin: 72px;
-  background: var(--orange);
-}
-
-.banner-container {
-  display: flex;
-  justify-content: center;
-  flex-flow: row nowrap;
-  align-items: center;
-}
-
-.banner-txt {
-  color: var(--darkblue);
-  font-size: 12.4375vw;
-  align-self: flex-end;
-  margin-left: 20px;
-  margin-top: 5vh;
-}
 
 .banner-logo {
   width: 25vw;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-.cta h3:hover {
-  color: var(--orange);
-}
-.cta:hover {
-  scale: 1.1;
 }
 
 /*-------- CTA ---------*/
@@ -81,6 +55,14 @@
   text-align: center;
   flex-direction: column;
   display: flex;
+}
+
+/*-------- HOVER EFFECTS ---------*/
+.cta h3:hover {
+  color: var(--orange);
+}
+.cta:hover {
+  scale: 1.1;
 }
 
 /*-------- MEDIA QUERIES ---------*/
