@@ -85,14 +85,17 @@ label #sign-two {
 /*-------- HOVER EFFECTS ---------*/
 .nav-center li a:hover {
   font-size: 1.9em;
+  transition: 0.3s ease-out;
 }
 
 .navlogo:hover {
   scale: 1.05;
+  transition: 0.3s ease-out;
 }
 
 .nav-right-container li a:hover {
   font-size: 1.9em;
+  transition: 0.3s ease-out;
 }
 
 /*-------- MEDIA QUERIES ---------*/

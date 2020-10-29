@@ -60,9 +60,13 @@
 /*-------- HOVER EFFECTS ---------*/
 .cta h3:hover {
   color: var(--orange);
+  transition: 0.3s ease-out;
+  font-size: 4.1vh;
+  width: 40.3vh;
+  height: 7.3vh;
 }
-.cta:hover {
-  scale: 1.1;
+.fa-angle-right:hover {
+  font-size: 7.3vh;
 }
 
 /*-------- MEDIA QUERIES ---------*/
