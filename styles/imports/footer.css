@@ -1,9 +1,13 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 footer {
   background-color: var(--orange);
   padding-bottom: 4rem;
-  position: fixed;
-  width: 100vw;
-  min-height: 100vh;
+  margin-top: auto;
 }
 .container {
   display: flex;
@@ -11,7 +15,6 @@ footer {
   justify-content: center;
   margin: 0 auto;
   height: 10vh;
-  width: 80%;
   color: var(--darkblue);
 }
 .footer-gamehub,
