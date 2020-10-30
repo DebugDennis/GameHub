@@ -24,19 +24,20 @@ footer {
 .footer-sitemap,
 .footer-socials {
   margin-left: 4vw;
+  padding: 0 5%;
   display: flex;
   flex-direction: column;
 }
 .footer-h2 {
   margin-bottom: 1vh;
-  font-size: 2vh;
+  font-size: 1.5vw;
   font-weight: bolder;
   font-family: "Avenir", sans-serif;
 }
 .container div a {
   color: var(--darkblue);
   margin-bottom: 0.25vh;
-  font-size: 1.6vh;
+  font-size: 1vw;
   font-family: "Avenir", sans-serif;
 }
 .footer-socials {
@@ -64,4 +65,12 @@ footer {
     flex-direction: row;
     break-before: always;
   }
+@media (max-width: 700px) {
+  .container div a {
+    font-size: 1vh;
+  }
+  .footer-h2 {
+    font-size: 1.5vh;
+  }
+}
 }
