@@ -1,6 +1,7 @@
 .banner {
     margin: 72px;
     background: var(--orange);
+    width: 80vw;
   }
   
   .banner-container {
