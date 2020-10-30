@@ -99,10 +99,9 @@ body {
     font-size: 2vh;
   }
   .cta h3:hover {
-    font-size: 2.1vh; 
+    font-size: 2.1vh;
     width: 17.8vh;
     height: 3.3vh;
-  
   }
   .fa-angle-right {
     font-size: 5vh;
