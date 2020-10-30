@@ -16,7 +16,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 10.5vh;
+  height: 10vh;
   color: var(--darkblue);
 }
 .footer-gamehub,
@@ -96,5 +96,8 @@ footer {
   .container div a:hover {
     font-size: 1.1vw;
     transition: 0.3s ease-out;
+  }
+  .container {
+    height: 8vw;
   }
 }
