@@ -4,6 +4,10 @@
 @import "imports/global.css";
 @import "imports/banner.css";
 
+body {
+  min-height: 100vh;
+}
+
 /*-------- BANNER ---------*/
 
 .banner-logo {

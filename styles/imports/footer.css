@@ -3,6 +3,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+main {
+  min-height: calc(100vh - 10vh);
+}
 
 footer {
   background-color: var(--orange);
@@ -13,7 +16,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
   height: 10vh;
   color: var(--darkblue);
 }
