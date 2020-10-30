@@ -1,5 +1,5 @@
 .banner {
-    margin: 72px;
+    margin: 72px auto;
     background: var(--orange);
     width: 80vw;
   }
@@ -15,6 +15,5 @@
     color: var(--darkblue);
     font-size: 12.4375vw;
     align-self: flex-end;
-    margin-left: 20px;
     margin-top: 5vh;
   }
