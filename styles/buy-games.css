@@ -8,7 +8,7 @@
 .container--title {
   font-family: "Gumela", sans-serif;
   color: var(--orange);
-  grid-column: 2 / span 4;
+  grid-column: 2 / span 6;
 }
 
 .cards-container {

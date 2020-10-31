@@ -9,6 +9,7 @@ h1 {
 nav {
   height: 100px;
   background: var(--orange);
+  box-shadow: black 0px 5px 30px;
 }
 
 nav a img {
