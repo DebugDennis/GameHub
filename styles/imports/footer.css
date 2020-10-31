@@ -11,6 +11,7 @@ footer {
   background-color: var(--orange);
   padding-bottom: 10vh;
   margin-top: auto;
+  margin-top: 10vh;
 }
 .container {
   display: flex;
