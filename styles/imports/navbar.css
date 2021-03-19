@@ -7,76 +7,66 @@ h1 {
 }
 
 nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   height: 100px;
   background: var(--orange);
   box-shadow: black 0px 5px 30px;
 }
 
-nav a img {
-  position: absolute;
-  left: 2%;
-  margin-top: 10px;
-}
-
-nav ul {
+.nav-ul {
   display: flex;
   flex-flow: row nowrap;
-  margin-right: 25px;
+  align-items: center;
   list-style: none;
 }
-nav ul div {
+.nav-ul div {
   display: flex;
-  line-height: 50px;
 }
 
-nav ul li a {
+.nav-ul li a {
   position: relative;
-  padding: 5px 0;
+  padding: 0px 0;
   color: var(--lightblue);
   text-decoration: none;
 }
 
 .nav-center {
-  margin: 25px auto;
-  padding-left: 10vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .nav-center li {
-  padding: 0 30px;
-  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .nav-center li a {
   font-size: 1.75em;
-  padding: 10px 15px;
   color: var(--darkblue);
-}
-
-.nav-right {
-  margin-right: 25px;
-  margin-top: 25px;
 }
 
 .nav-right-container li a,
 .search-btn {
   font-size: 1.75em;
   color: var(--darkblue);
-  padding: 20px;
 }
 
 .search-txt {
   font-size: 1.2em;
 }
 
-label #sign-one,
-label #sign-two {
+.ham-menu {
+  background: transparent;
+  border: none;
   font-size: 30px;
   color: var(--darkblue);
-  float: right;
-  margin-right: 30px;
   cursor: pointer;
   display: none;
-  margin-top: 30px;
 }
-#ham-menu {
+.ham-menu {
   display: none;
 }
 .current-page {
@@ -102,10 +92,15 @@ label #sign-two {
 /*-------- MEDIA QUERIES ---------*/
 
 @media (max-width: 828px) {
-  label #sign-one {
-    display: flex;
+  .ham-menu {
+    display: block;
   }
-  nav ul {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-ul {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -119,14 +114,8 @@ label #sign-two {
   nav ul div {
     line-height: 75px;
   }
-  #ham-menu:checked ~ ul {
+  ul.show {
     left: 0;
-  }
-  #ham-menu:checked ~ label #sign-one {
-    display: none;
-  }
-  #ham-menu:checked ~ label #sign-two {
-    display: block;
   }
   nav a img {
     scale: 0.8;
@@ -135,14 +124,14 @@ label #sign-two {
   .nav-right-container li a,
   .search-btn {
     color: var(--orange);
+    padding: unset;
   }
   .nav-center {
     flex-direction: column;
     align-items: center;
-    line-height: 75px;
-    margin-bottom: 0;
-    margin-top: 5vh;
-    padding-left: 0;
+    margin-top: unset;
+    margin-bottom: unset;
+    padding-left: unset;
   }
   .nav-center li {
     margin-left: 0;
@@ -150,13 +139,11 @@ label #sign-two {
   .nav-right {
     flex-direction: column;
     align-items: center;
-    margin: 0;
-    line-height: 75px;
+    margin: unset;
   }
   .nav-right-container {
     flex-direction: column;
     align-items: center;
-    line-height: 75px;
   }
   .current-page {
     border-bottom: 2px solid var(--orange);
@@ -167,8 +154,7 @@ label #sign-two {
   .nav-center li a:hover {
     font-size: 1.8em;
   }
-  label #sign-one:hover,
-  label #sign-two:hover {
+  .ham-menu {
     font-size: 2em;
   }
 }
